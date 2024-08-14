@@ -22,12 +22,35 @@ Monte_Carlo_Portfolio_Optimization/
 └── README.md
 ```
 
+## Installation
+
+To get started with this portfolio optimization tool in R, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/peterajhgraham/Monte-Carlo-Portfolio-Optimization.git
+   ```
+2. **Navigate to the repository's directory**:
+   ```bash
+   cd Monte-Carlo-Portfolio-Optimization
+   ```
+3. **Install the required R packages**:
+   ```bash
+   install.packages(c("quantmod", "data.table", "Matrix", "ggplot2", "PerformanceAnalytics", "testthat"))
+   ```
 ## Usage
 
-1. Install required R packages: `quantmod`, `data.table`, `Matrix`, `ggplot2`, `PerformanceAnalytics`, `testthat`.
-2. Load the functions from `src/` as needed.
-3. Use the `monte_carlo_simulation()` function to simulate asset returns.
-4. Use the `optimize_portfolio()` function to optimize your portfolio based on the simulated returns.
-5. Use `get_stock_data()` to load and prepare historical price data.
-6. Visualize results using `plot_simulation_results()`.
-7. Analyze performance metrics using `calculate_performance_metrics()` and `evaluate_portfolio_performance()`.
+1. **Run the Monte Carlo Simulation**:
+  ```bash
+  source("src/monte_carlo_simulation.R")
+  ```
+
+2. **Optomize the portfolio**:
+  ```bash
+  source("src/portfolio_optimization.R")
+  ```
+
+3. **Visualize the results**:
+  ```bash
+  source("src/visualization.R")
+  ```
