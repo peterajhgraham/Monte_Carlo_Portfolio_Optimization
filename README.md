@@ -11,12 +11,15 @@ Monte_Carlo_Portfolio_Optimization/
 │   ├── Monte_Carlo_Simulation.R
 │   ├── Portfolio_Optimization.R
 │   └── Utility_Functions.R
+│
 ├── test/
 │   ├── test_Monte_Carlo_Simulation.R
 │   ├── test_Portfolio_Optimization.R
 │   └── test_Utility_Functions.R
-├── LICENSE
+│
+├── Monte_Carlo_Example_Output.png
 ├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
