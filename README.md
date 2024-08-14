@@ -7,6 +7,7 @@ This repository serves as an investment analysis tool, employing 100,000 Monte C
 ```
 Monte_Carlo_Portfolio_Optimization/
 ├── src/
+│   ├── Main.R
 │   ├── Monte_Carlo_Simulation.R
 │   ├── Portfolio_Optimization.R
 │   └── Utility_Functions.R
@@ -14,9 +15,6 @@ Monte_Carlo_Portfolio_Optimization/
 │   ├── test_Monte_Carlo_Simulation.R
 │   ├── test_Portfolio_Optimization.R
 │   └── test_Utility_Functions.R
-├── data/
-│   └── Historical_Prices.csv  # This can be used for offline data
-├── Project.Rproj
 ├── LICENSE
 ├── .gitignore
 └── README.md
@@ -40,17 +38,7 @@ To get started with this portfolio optimization tool in R, follow these steps:
    ```
 ## Usage
 
-1. **Run the Monte Carlo Simulation**:
+1. **Execute the Main.R script to perform the portfolio optimization simulation**:
   ```bash
-  source("src/Monte_Carlo_Simulation.R")
-  ```
-
-2. **Optomize the portfolio**:
-  ```bash
-  source("src/Portfolio_Optimization.R")
-  ```
-
-3. **Visualize the results**:
-  ```bash
-  source("src/Visualization.R")
+  R Main.R
   ```
