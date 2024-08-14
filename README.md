@@ -3,7 +3,7 @@
 ## Directory Structure
 
 ```
-PortfolioOptimization/
+Monte_Carlo_Portfolio_Optimization/
 ├── src/
 │   ├── monte_carlo_simulation.R
 │   ├── portfolio_optimization.R
