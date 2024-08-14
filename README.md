@@ -5,15 +5,15 @@
 ```
 Monte_Carlo_Portfolio_Optimization/
 ├── src/
-│   ├── monte_carlo_simulation.R
-│   ├── portfolio_optimization.R
-│   └── utility_functions.R
+│   ├── Monte_Carlo_Simulation.R
+│   ├── Portfolio_Optimization.R
+│   └── Utility_Functions.R
 ├── test/
-│   ├── test_monte_carlo_simulation.R
-│   ├── test_portfolio_optimization.R
-│   └── test_utility_functions.R
+│   ├── test_Monte_Carlo_Simulation.R
+│   ├── test_Portfolio_Optimization.R
+│   └── test_Utility_Functions.R
 ├── data/
-│   └── historical_prices.csv  # This can be used for offline data
+│   └── Historical_Prices.csv  # This can be used for offline data
 ├── Project.Rproj
 ├── LICENSE
 ├── .gitignore
