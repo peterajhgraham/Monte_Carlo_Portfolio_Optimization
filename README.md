@@ -34,11 +34,15 @@ To get started with this portfolio optimization tool in R, follow these steps:
    ```
 3. **Install the required R packages**:
    ```bash
-   "install.packages(c('quantmod', 'data.table', 'Matrix', 'ggplot2', 'PerformanceAnalytics', 'testthat'))"
+   "install.packages(c('quantmod', 'data.table', 'Matrix', 'ggplot2', 'PerformanceAnalytics'))"
    ```
 ## Usage
 
 1. **Execute the Main.R script to perform the portfolio optimization simulation**:
   ```bash
-  R Main.R
+  Rscript src/Main.R
   ```
+
+## Sample Output
+Below is an example output exhibits return and volatility of the 100,000 portfolios ran against the market representation (SPY) and provides metrics for the optimized portfolio's performance and the market's performance.
+![Example Output]
