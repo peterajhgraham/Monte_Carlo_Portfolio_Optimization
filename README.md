@@ -44,5 +44,5 @@ To get started with this portfolio optimization tool in R, follow these steps:
   ```
 
 ## Sample Output
-Below is an example output exhibits return and volatility of the 100,000 portfolios ran against the market representation (SPY) and provides metrics for the optimized portfolio's performance and the market's performance.
-![Example Output]
+Below is an example output that exhibits return and volatility of the 100,000 asset portfolios ran against the market representation (SPY) and provides metrics for the optimized portfolio's performance along with the market's performance.
+![Example Output](Monte_Carlo_Example_Output.png)
