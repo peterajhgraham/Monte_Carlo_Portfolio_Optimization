@@ -28,29 +28,29 @@ To get started with this portfolio optimization tool in R, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/peterajhgraham/Monte-Carlo-Portfolio-Optimization.git
+   git clone https://github.com/peterajhgraham/Monte_Carlo_Portfolio_Optimization.git
    ```
 2. **Navigate to the repository's directory**:
    ```bash
-   cd Monte-Carlo-Portfolio-Optimization
+   cd Monte_Carlo_Portfolio_Optimization
    ```
 3. **Install the required R packages**:
    ```bash
-   install.packages(c("quantmod", "data.table", "Matrix", "ggplot2", "PerformanceAnalytics", "testthat"))
+   "install.packages(c('quantmod', 'data.table', 'Matrix', 'ggplot2', 'PerformanceAnalytics', 'testthat'))"
    ```
 ## Usage
 
 1. **Run the Monte Carlo Simulation**:
   ```bash
-  source("src/monte_carlo_simulation.R")
+  source("src/Monte_Carlo_Simulation.R")
   ```
 
 2. **Optomize the portfolio**:
   ```bash
-  source("src/portfolio_optimization.R")
+  source("src/Portfolio_Optimization.R")
   ```
 
 3. **Visualize the results**:
   ```bash
-  source("src/visualization.R")
+  source("src/Visualization.R")
   ```
