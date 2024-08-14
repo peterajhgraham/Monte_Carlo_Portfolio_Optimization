@@ -1,6 +1,6 @@
 # Portfolio Optimization with Monte Carlo Simulations
 
-This repository serves as an investment analysis tool, employing Monte Carlo simulations designed to optimize asset allocation strategies.
+This repository serves as an investment analysis tool, employing Monte Carlo simulations designed to optimize asset allocation strategies using historical market data to enhance risk-adjusted returns.
 
 ## Directory Structure
 
