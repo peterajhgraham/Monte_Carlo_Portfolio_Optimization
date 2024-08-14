@@ -72,16 +72,25 @@ optimal_portfolio <- simulated_portfolios[optimal_idx]
 optimal_weights <- weights_record[, optimal_idx]
 
 # Visualization
+# Visualization
 ggplot(simulated_portfolios, aes(x = Volatility, y = Return, color = `Sharpe Ratio`)) +
   geom_point(alpha = 0.5) +
   scale_color_gradient(low = "yellow", high = "blue") +
-  geom_point(aes(x = market_volatility, y = market_return), color = 'red', size = 3, shape = 21, fill = 'red') +  # Market performance
-  geom_point(aes(x = optimal_portfolio$Volatility, y = optimal_portfolio$Return), color = 'green', size = 3, shape = 8) +  # Optimal portfolio
   labs(title = "Efficient Frontier",
        x = "Volatility",
        y = "Return",
        color = "Sharpe Ratio") +
   theme_minimal() +
-  annotate("text", x = market_volatility, y = market_return, label = sprintf("Market (%s)\nReturn: %.2f%%\nVolatility: %.2f%%\nSharpe Ratio: %.2f", MARKET_REPRESENTATION, market_return * 100, market_volatility * 100, market_sharpe_ratio), color = "red", size = 3, hjust = 0) +
-  annotate("text", x = optimal_portfolio$Volatility, y = optimal_portfolio$Return, label = sprintf("Optimal Portfolio\nReturn: %.2f%%\nVolatility: %.2f%%\nSharpe Ratio: %.2f", optimal_portfolio$Return * 100, optimal_portfolio$Volatility * 100, optimal_portfolio$`Sharpe Ratio`), color = "green", size = 3, hjust = 0) +
+  # Annotate Market (SPY) performance
+  annotate("point", x = market_volatility, y = market_return, color = 'red', size = 3) +
+  annotate("text", x = market_volatility, y = market_return, 
+           label = sprintf("Market (%s)\nReturn: %.2f%%\nVolatility: %.2f%%\nSharpe Ratio: %.2f", 
+                           MARKET_REPRESENTATION, market_return * 100, market_volatility * 100, market_sharpe_ratio), 
+           color = "red", size = 3, hjust = 0) +
+  # Annotate Optimal Portfolio
+  annotate("point", x = optimal_portfolio$Volatility, y = optimal_portfolio$Return, color = 'green', size = 3, shape = 8) +
+  annotate("text", x = optimal_portfolio$Volatility, y = optimal_portfolio$Return, 
+           label = sprintf("Optimal Portfolio\nReturn: %.2f%%\nVolatility: %.2f%%\nSharpe Ratio: %.2f", 
+                           optimal_portfolio$Return * 100, optimal_portfolio$Volatility * 100, optimal_portfolio$`Sharpe Ratio`), 
+           color = "green", size = 3, hjust = 0) +
   theme(plot.title = element_text(hjust = 0.5))
