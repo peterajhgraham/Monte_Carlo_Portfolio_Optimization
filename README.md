@@ -2,6 +2,12 @@
 
 This repository serves as an investment analysis tool, employing 100,000 Monte Carlo simulations designed to optimize asset allocation strategies using historical market data to enhance risk-adjusted returns.
 
+## Sample Output
+
+Below is an example output that exhibits return and volatility of the 100,000 asset portfolios ran against the market representation (SPY) and provides metrics for the optimized portfolio's performance along with the market's performance.
+
+![Example Output](Monte_Carlo_Example_Output.png)
+
 ## Directory Structure
 
 ```
@@ -45,7 +51,3 @@ To get started with this portfolio optimization tool in R, follow these steps:
   ```bash
   Rscript src/Main.R
   ```
-
-## Sample Output
-Below is an example output that exhibits return and volatility of the 100,000 asset portfolios ran against the market representation (SPY) and provides metrics for the optimized portfolio's performance along with the market's performance.
-![Example Output](Monte_Carlo_Example_Output.png)
